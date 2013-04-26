@@ -1,0 +1,6 @@
+<%= render 'pages/home' %>
+<% if user_signed_in? %>
+	<div class:"well">
+		<%= render @pins %>
+	</div>
+<% end %>
