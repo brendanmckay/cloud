@@ -1,34 +1,70 @@
 <% if user_signed_in? %>
 <% else %>
-<div class="test">
-    <center>
-    <h1>Welcome to Cloud EconoMe</h1></p>
-    	<br />
-		<div class="welcome">
- 			<p>The <img src="http://bitcoin.org/img/logotop.svg" class="img-rounded"> community. </p>
- 		</div>
- 		<br />
-		<p><%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %></p>
-	</center>
-</div>
-
-<div class='test'>
-	<center>
-	<form class="form-inline">
-  <input type="text" class="input-small" placeholder="Email">
-  <input type="password" class="input-small" placeholder="Password">
-  <label class="checkbox">
-    <input type="checkbox"> Remember me
-  </label>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-</center>
-</center>
-
-</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkjTW52TEkrToWDB-CsZLNR3Ihns1hxcfsPIwDnmT3mEGCfybZIA" class="img-polaroid">
+      <br>
+      <br>
+      <div class="well">
+        <ul class="nav nav-list">
+          <li class="nav-header">Navigation</li>
+              <li class="active"><a href="#">Dashboard</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+      </div>
+    </div>
+    <div class="span9">
+      <div class="test">
+        <img src="http://blockchain.info/qr?data=1TBLoBWpg4N2H5oPo7XEsdj3EXaMK5U1k&size=200" style="float:right"></h5>
+        <h1>Max Raskin</h1>
+        <h3>maxraskin@email.com</h3>
+        <h5 class="muted">1uEbMgunupShBVTewXjtqbBv5MndwfXhb</h5>
+        <h5 class="text-info">Industry</h5>
+        <h5 class="text-info">Company</h5>
+        <h5 class="text-info">Job Title  
+      </div>
+      <div class="well">
+        <form class="navbar-search pull-left">
+          <input type="text" class="search-query" placeholder="Search Roladex">
+        </form>
+        </br>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Bitcoin Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>1TBLoBWpg4N2H5oPo7XEsdj3EXaMK5U1k</td>
+            </tr>
+            <tr>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>1LrnDQ4zbaTtZqHR4EtxuwNZgH1FcgL7Q9</td>
+            </tr>
+            <tr>
+              <td>Chris</td>
+              <td>Roberts</td>
+              <td>1JAPKt1khDpiJuHbhdAYxEGKuzVnwFAuav</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>  
 
 <% end %>
 
+<!-- Link <%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %></p> -->
 
 
 

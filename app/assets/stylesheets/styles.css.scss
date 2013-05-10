@@ -2,9 +2,9 @@ $btnPrimaryBackground: #e78406;
 $btnPrimaryBackgroundHighlight: #ce7605;
 $navbarBackground: #2c6fad;
 $navbarBackgroundHighlight: #2c6fad;
-$navbarLinkColor: white;
-$navbarLinkColorHover: #e78406;
-$navbarBrandColor: #e78406;
+$navbarLinkColor: #1c4870;
+$navbarLinkColorHover: white;
+
 
 
 @import 'bootstrap';
@@ -23,6 +23,16 @@ body {
 .footer {margin-right: 25px;}
 
 .well {background-color: white;}
+
+.navbar .brand {
+float: left;
+display: block;
+padding: 10px 20px 10px;
+margin-left: -20px;
+font-size: 25px;
+font-weight: 100;
+color: rgb(255, 255, 255);
+}
 
 .navbar-inner {
 	padding-top: 3px;
